@@ -282,11 +282,7 @@ svg {
     cursor: pointer;
 }
 
-.team-diseño {
-    transition: 250ms var(--cubic-bezier-animation);
-}
-
-.team-diseño {
+.card__title {
     color: #212121;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -294,13 +290,14 @@ svg {
     font-weight: 700;
     line-height: 2em;
     letter-spacing: 0.02em;
+    transition: 250ms var(--cubic-bezier-animation);
 }
 
-.team-diseño:hover {
+.card__title:hover {
     color: #757575;
 }
 
-.team-profec {
+.card__subtitle {
     color: #757575;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -834,18 +831,22 @@ svg {
     transition: 250ms var(--cubic-bezier-animation);
 }
 
-.fichas {
+.card__image {
     position: relative;
     overflow: hidden;
-
 }
 
-.team {
+.card__image:hover>.card__information {
+    top: 0;
+}
+
+
+.card__text {
     padding-left: 24px;
     padding-right: 24px;
 }
 
-.team-imag__container {
+.card__list {
     width: 1600px;
     display: flex;
     flex-wrap: wrap;
@@ -854,7 +855,7 @@ svg {
     padding-left: 150px;
 }
 
-.team-imags {
+.card__item {
 
     flex-basis: calc((100% - 60px) / 9);
     background-color: rgb(255, 255, 255);
@@ -862,13 +863,13 @@ svg {
     border-radius: 4px;
 }
 
-.team-imags:hover {
+.card__item:hover {
     box-shadow: 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06),
         0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.text-information {
+.card__information {
     position: absolute;
     top: 100%;
     width: 370px;
@@ -887,9 +888,6 @@ svg {
     transition: 250ms var(--cubic-bezier-animation);
 }
 
-.fichas:hover>.text-information {
-    top: 0;
-}
 
 /*------------------backdrop--------------*/
 .backdrop {
