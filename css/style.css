@@ -714,7 +714,7 @@ svg {
 
 /*---------porfolio----------*/
 
-.button {
+.fiter__button-list {
     display: flex;
     justify-content: center;
     gap: 15px;
