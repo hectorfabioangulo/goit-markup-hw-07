@@ -135,7 +135,7 @@ svg {
     fill: var(--blue);
 }
 
-.active-button {
+.presentation__button {
     background-color: var(--blue);
     color: var(--white);
     cursor: pointer;
@@ -148,7 +148,7 @@ svg {
     border-radius: 4px;
 }
 
-.hero-title {
+.presentation__title {
     font-family: 'Roboto', sans-serif;
     color: var(--white);
     line-height: 1.3em;
@@ -160,7 +160,7 @@ svg {
     text-align: center;
 }
 
-.politicas-title {
+.about__title {
     color: #212121;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -171,7 +171,7 @@ svg {
     text-transform: uppercase;
 }
 
-.politicas-text {
+.about__text {
     color: #757575;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -210,7 +210,7 @@ svg {
     letter-spacing: 0.03em;
 }
 
-.equipo-name {
+.our-team__item-name {
     color: #212121;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -219,9 +219,14 @@ svg {
     line-height: 1.17em;
     letter-spacing: 0.03em;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
 }
 
-.equipo-sub-title {
+.our-team__item-paragraph {
     color: #757575;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -229,6 +234,11 @@ svg {
     font-weight: 400;
     line-height: 1.17em;
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 0px;
 }
 
@@ -344,7 +354,7 @@ svg {
 }
 
 /* ------segunda seccion titulo-------------------------------------------------------*/
-.hero {
+.presentation {
     background-color: var(--black);
     font-family: 'Roboto', sans-serif;
     color: var(--white);
@@ -363,7 +373,7 @@ svg {
     padding-top: 50px;
 }
 
-.title_container {
+.presentation__container {
     display: flex;
     flex-direction: column;
     width: 945px;
@@ -373,7 +383,7 @@ svg {
 
 /*---------tercera seccion productos----------*/
 
-.about__galery {
+.about-list {
     display: flex;
     gap: 30px;
 }
@@ -386,9 +396,6 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.about__imagenes {
     transition: fill 250ms var(--cubic-bezier-animation);
 }
 
@@ -396,32 +403,45 @@ svg {
     fill: var(--blue);
 }
 
-.politicas-list:focus {
+.about__item:focus {
     color: var(--blue);
 }
 
 /*------------cuarta seccion diseño------------*/
 
-.diseño__container {
+.service {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding-bottom: 50px;
 }
 
-.about__img {
+.service__title {
+    color: #212121;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 44px;
+    padding-top: 59px;
+}
+
+.service__list {
     display: flex;
     gap: 30px;
     justify-content: center;
     padding-bottom: 94px;
 }
 
-.diseño-list {
+.service__item {
     position: relative;
     padding-bottom: 10px;
 }
 
-.diseño-soluciones {
+.service__item-text {
     position: absolute;
     display: flex;
     align-items: center;
@@ -446,7 +466,7 @@ svg {
 /*---------------quinta--------*/
 
 
-.about__redes {
+.our-team__item-redes {
     display: inline-flex;
     justify-content: center;
     padding-top: 16px;
@@ -455,7 +475,7 @@ svg {
     padding-right: 10px;
 }
 
-.redes {
+.our-team__link-redes {
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     width: 44px;
@@ -471,58 +491,22 @@ svg {
 
 .social:hover,
 .social:focus,
-.redes:hover,
-.redes:focus {
+.our-team__link-redes:hover,
+.our-team__link-redes:focus {
     background-color: var(--blue);
     color: var(--detail-color);
 }
 
 /*---------sexta--------*/
-
-.equipo__container {
+.our-team {
     background: #F5F4FA;
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+    text-align: center;
 }
 
-.equipo__img {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding-bottom: 94px;
-}
-
-.Equipo-list-item {
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0 0 0 / 0.2),
-        0px 1px 1px 0px rgba(0 0 0 / 0.14),
-        0px 1px 3px 0px rgba(0 0 0 / 0.12);
-}
-
-.equipo-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
-}
-
-.equipo-sub-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 0px;
-}
-
-/*--------------septima-----------*/
-.section-clientes {
-    padding-bottom: 94px;
-}
-
-.item-logit {
+.our-team__title {
     color: #212121;
     margin: auto;
     font-family: 'Roboto', sans-serif;
@@ -535,12 +519,46 @@ svg {
     padding-top: 59px;
 }
 
-.about__logits {
+.our-team__list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+
+.our-team__item {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0 0 0 / 0.2),
+        0px 1px 1px 0px rgba(0 0 0 / 0.14),
+        0px 1px 3px 0px rgba(0 0 0 / 0.12);
+}
+
+/*--------------septima-----------*/
+.customer__section {
+    padding-bottom: 94px;
+}
+
+.customer__title {
+    color: #212121;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 44px;
+    padding-top: 59px;
+}
+
+.customer__list {
     display: flex;
     gap: 30px;
 }
 
-.logits {
+
+.customer__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -553,8 +571,8 @@ svg {
         border 250ms var(--cubic-bezier-animation);
 }
 
-.logits:hover,
-.logits:focus {
+.customer__link:hover,
+.customer__link:focus {
     color: var(--blue);
     border: 2px solid var(--var-color-fondo-hover-focus);
     border-radius: 2px;
