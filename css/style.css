@@ -90,14 +90,6 @@ svg {
     border-radius: 4px;
 }
 
-.hero__contact.list.p-0 {
-    padding-bottom: 10px;
-}
-
-.header-email {
-    transition: 250ms var(--cubic-bezier-animation);
-}
-
 .header-email {
     font-family: 'Roboto', sans-serif;
     color: #757575;
@@ -107,16 +99,12 @@ svg {
     line-height: 1.17em;
     letter-spacing: 0.03em;
     cursor: pointer;
-
+    transition: 250ms var(--cubic-bezier-animation);
 }
 
 .header-email:hover,
 .header-email:focus {
     fill: var(--blue);
-}
-
-.header-tel {
-    transition: 250ms var(--cubic-bezier-animation);
 }
 
 .header-tel {
@@ -128,6 +116,7 @@ svg {
     line-height: 1.17em;
     letter-spacing: 0.03px;
     cursor: pointer;
+    transition: 250ms var(--cubic-bezier-animation);
 }
 
 .header-tel:hover,
@@ -242,7 +231,7 @@ svg {
     margin-top: 0px;
 }
 
-.directions__container {
+.footer__directions {
 
     color: var(--white);
     font-family: 'Roboto', sans-serif;
@@ -315,7 +304,7 @@ svg {
     justify-content: space-between;
 }
 
-.hero__navegation {
+.header__navegation-list {
     display: flex;
     column-gap: 80px;
     justify-content: center;
@@ -323,11 +312,12 @@ svg {
     /* padding: 25px; */
 }
 
-.hero__contact {
+.header__contact-list {
     display: flex;
     column-gap: 40px;
     justify-content: center;
     align-items: center;
+    margin-top: 0px;
 }
 
 .pv-main {
@@ -486,8 +476,8 @@ svg {
         background-color 250ms var(--cubic-bezier-animation);
 }
 
-.social:hover,
-.social:focus,
+.footer__web:hover,
+.footer__web:focus,
 .our-team__link-redes:hover,
 .our-team__link-redes:focus {
     background-color: var(--blue);
@@ -579,17 +569,22 @@ svg {
 /*-----------------footer-------------*/
 
 
-.container-footer {
+.container__footer {
     background-color: rgba(47, 48, 58, 1);
 }
 
-.address {
+.footer__address {
     display: inline-flex;
     align-items: baseline;
     gap: 62px;
 }
 
-.header__link {
+.footer__network-item {
+    display: inline-flex
+}
+
+
+.footer__link-list {
     list-style: none;
     font-style: normal;
     padding: 0%;
@@ -603,21 +598,41 @@ svg {
     letter-spacing: 0.42px;
 }
 
-.header-direccio {
+.footer__location {
     color: rgba(255, 255, 255, 1);
     transition: 250ms var(--cubic-bezier-animation);
 }
 
-.header-direccio:hover,
-.header-email:hover,
-.header-tel:hover {
+.footer__email {
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: 250ms var(--cubic-bezier-animation);
+}
+
+.footer__location:hover,
+.footer__email:hover,
+.footer__email:focus,
+.footer__tel:hover,
+.footer__tel:focus {
     color: var(--blue);
 }
 
-.header-email:focus,
-.header-tel:focus {
-    color: var(--blue);
-    outline: none;
+.footer__tel {
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.17em;
+    letter-spacing: 0.03px;
+    cursor: pointer;
+    transition: 250ms var(--cubic-bezier-animation);
 }
 
 .hero-triton_container {
@@ -641,7 +656,7 @@ svg {
 
 }
 
-.social {
+.footer__web {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     width: 44px;
