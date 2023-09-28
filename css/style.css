@@ -90,7 +90,7 @@ svg {
     border-radius: 4px;
 }
 
-.header-email {
+.header__email-item {
     font-family: 'Roboto', sans-serif;
     color: #757575;
     font-size: 14px;
@@ -102,12 +102,12 @@ svg {
     transition: 250ms var(--cubic-bezier-animation);
 }
 
-.header-email:hover,
-.header-email:focus {
+.header__email-item:hover,
+.header__email-item:focus {
     fill: var(--blue);
 }
 
-.header-tel {
+.header__tel-item {
     color: #757575;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -119,8 +119,8 @@ svg {
     transition: 250ms var(--cubic-bezier-animation);
 }
 
-.header-tel:hover,
-.header-tel:focus {
+.header__tel-item:hover,
+.header__tel-item:focus {
     fill: var(--blue);
 }
 
@@ -299,7 +299,7 @@ svg {
 /*     estilos del header menu principal web studio */
 
 
-.navigation__container {
+.header__navigation-container {
     display: flex;
     justify-content: space-between;
 }
@@ -569,7 +569,7 @@ svg {
 /*-----------------footer-------------*/
 
 
-.container__footer {
+.footer__container {
     background-color: rgba(47, 48, 58, 1);
 }
 
