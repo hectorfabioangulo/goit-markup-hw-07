@@ -299,7 +299,7 @@ svg {
 /*     estilos del header menu principal web studio */
 
 
-.header__navigation-container {
+.header__navegation-container {
     display: flex;
     justify-content: space-between;
 }
