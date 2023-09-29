@@ -542,6 +542,7 @@ svg {
 .customer__list {
     display: flex;
     gap: 30px;
+    padding-left: 15px;
 }
 
 
@@ -645,7 +646,7 @@ svg {
 
 }
 
-.title-footer {
+.footer__caption {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -668,7 +669,7 @@ svg {
     transition: color 250ms var(--cubic-bezier-animation);
 }
 
-.email-footer {
+.footer__title {
     color: var(--white);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
