@@ -47,7 +47,7 @@ svg {
     margin: auto;
 }
 
-.logo-blue {
+.header__logo-blue {
     color: var(--blue);
     text-align: right;
     font-family: 'Raleway';
@@ -58,11 +58,7 @@ svg {
     cursor: pointer;
 }
 
-.link {
-    transition: 250ms var(--cubic-bezier-animation);
-}
-
-.link {
+.header__btn-link {
     color: rgba(33, 33, 33, 1);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -71,15 +67,16 @@ svg {
     letter-spacing: 0.02em;
     text-align: left;
     cursor: pointer;
+    transition: 250ms var(--cubic-bezier-animation);
 }
 
-.link:hover,
-.link:focus {
+.header__btn-link:hover,
+.header__btn-link:focus {
     color: var(--blue);
     outline: none;
 }
 
-.current::after {
+.header__menu-current::after {
     content: "";
     position: relative;
     display: inline-block;
@@ -103,8 +100,10 @@ svg {
 }
 
 .header__email-item:hover,
-.header__email-item:focus {
-    fill: var(--blue);
+.header__email-item:focus,
+.header__tel-item:hover,
+.header__tel-item:focus {
+    color: var(--blue);
 }
 
 .header__tel-item {
@@ -117,183 +116,6 @@ svg {
     letter-spacing: 0.03px;
     cursor: pointer;
     transition: 250ms var(--cubic-bezier-animation);
-}
-
-.header__tel-item:hover,
-.header__tel-item:focus {
-    fill: var(--blue);
-}
-
-.presentation__button {
-    background-color: var(--blue);
-    color: var(--white);
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 1.18em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    padding: 10px 20px;
-    border-radius: 4px;
-}
-
-.presentation__title {
-    font-family: 'Roboto', sans-serif;
-    color: var(--white);
-    line-height: 1.3em;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 900;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.about__title {
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.17em;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.about__text {
-    color: #757575;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71em;
-    letter-spacing: 0.03em;
-    text-align: justify;
-}
-
-.diseño-title {
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.17em;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
-.diseño-block {
-    width: 373.16px;
-    line-height: 1.15em;
-
-
-}
-
-.equipo-title {
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.17em;
-    letter-spacing: 0.03em;
-}
-
-.our-team__item-name {
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.17em;
-    letter-spacing: 0.03em;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
-}
-
-.our-team__item-paragraph {
-    color: #757575;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.17em;
-    letter-spacing: 0.03em;
-    margin-top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 0px;
-}
-
-.footer__directions {
-
-    color: var(--white);
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.8em;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    gap: 70px;
-}
-
-.fiter-button {
-    transition: 250ms var(--cubic-bezier-animation);
-}
-
-.headr-button {
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.6em;
-    width: 98;
-    height: 26;
-}
-
-.fiter-button:hover {
-    background: var(--blue);
-    cursor: pointer;
-}
-
-.fiter-button:focus {
-    background: var(--blue);
-    color: var(--white);
-    cursor: pointer;
-}
-
-.card__title {
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2em;
-    letter-spacing: 0.02em;
-    transition: 250ms var(--cubic-bezier-animation);
-}
-
-.card__title:hover {
-    color: #757575;
-}
-
-.card__subtitle {
-    color: #757575;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.8em;
-    letter-spacing: 0.4;
 }
 
 /*     estilos del header menu principal web studio */
@@ -320,27 +142,12 @@ svg {
     margin-top: 0px;
 }
 
-.pv-main {
-    padding: 5px 0;
-}
-
-.p-0 {
-    padding: 0px;
-}
-
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none
-}
-
-.header-menu.current {
+.header__menu-current {
     color: var(--blue);
 }
 
-/* ------segunda seccion titulo-------------------------------------------------------*/
+/*-------- presentation--------- */
+
 .presentation {
     background-color: var(--black);
     font-family: 'Roboto', sans-serif;
@@ -368,7 +175,56 @@ svg {
     padding: 94px;
 }
 
-/*---------tercera seccion productos----------*/
+.presentation__title {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    line-height: 1.3em;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.presentation__button {
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.18em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+/* ------about------ */
+
+
+.about__title {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about__text {
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+    text-align: justify;
+}
 
 .about-list {
     display: flex;
@@ -394,7 +250,7 @@ svg {
     color: var(--blue);
 }
 
-/*------------cuarta seccion diseño------------*/
+/* ------service------- */
 
 .service {
     display: flex;
@@ -448,43 +304,8 @@ svg {
     bottom: 0px;
 }
 
+/* -------our----- */
 
-
-/*---------------quinta--------*/
-
-
-.our-team__item-redes {
-    display: inline-flex;
-    justify-content: center;
-    padding-top: 16px;
-    padding-bottom: 42px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.our-team__link-redes {
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(175, 177, 184, 1);
-    outline: none;
-    transition: color 250ms var(--cubic-bezier-animation),
-        background-color 250ms var(--cubic-bezier-animation);
-}
-
-.footer__web:hover,
-.footer__web:focus,
-.our-team__link-redes:hover,
-.our-team__link-redes:focus {
-    background-color: var(--blue);
-    color: var(--detail-color);
-}
-
-/*---------sexta--------*/
 .our-team {
     background: #F5F4FA;
     display: flex;
@@ -521,7 +342,71 @@ svg {
         0px 1px 3px 0px rgba(0 0 0 / 0.12);
 }
 
-/*--------------septima-----------*/
+.our-team__item-name {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.our-team__item-paragraph {
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.our-team__item-redes {
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.our-team__link-redes {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(175, 177, 184, 1);
+    outline: none;
+    transition: color 250ms var(--cubic-bezier-animation),
+        background-color 250ms var(--cubic-bezier-animation);
+}
+
+.footer__web:hover,
+.footer__web:focus,
+.our-team__link-redes:hover,
+.our-team__link-redes:focus {
+    background-color: var(--blue);
+    color: var(--detail-color);
+}
+
+/* ---------customer------- */
+
 .customer__section {
     padding-bottom: 94px;
 }
@@ -569,6 +454,19 @@ svg {
 
 /*-----------------footer-------------*/
 
+.footer__directions {
+
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8em;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 70px;
+}
 
 .footer__container {
     background-color: rgba(47, 48, 58, 1);
@@ -636,15 +534,7 @@ svg {
     transition: 250ms var(--cubic-bezier-animation);
 }
 
-.hero-triton_container {
-    background-color: rgba(47, 48, 58, 1);
-    display: flex;
-    justify-content: center;
-    padding-left: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
 
-}
 
 .footer__caption {
     font-family: 'Roboto', sans-serif;
@@ -669,6 +559,8 @@ svg {
     transition: color 250ms var(--cubic-bezier-animation);
 }
 
+/* ------footer sucribase------- */
+
 .footer__title {
     color: var(--white);
     font-family: 'Roboto', sans-serif;
@@ -679,6 +571,7 @@ svg {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
+
 
 .suscribirse-from {
     display: flex;
@@ -728,7 +621,49 @@ svg {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+
+.headr-button {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.6em;
+    width: 98;
+    height: 26;
+}
+
 /*---------porfolio----------*/
+
+
+
+
+.pv-main {
+    padding: 5px 0;
+}
+
+.p-0 {
+    padding: 0px;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none
+}
+
+.fiter-button:hover {
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.fiter-button:focus {
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
 
 .fiter__button-list {
     display: flex;
@@ -847,6 +782,33 @@ svg {
     transition: 250ms var(--cubic-bezier-animation);
 }
 
+/* --------card------- */
+
+.card__title {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2em;
+    letter-spacing: 0.02em;
+    transition: 250ms var(--cubic-bezier-animation);
+}
+
+.card__title:hover {
+    color: #757575;
+}
+
+.card__subtitle {
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8em;
+    letter-spacing: 0.4;
+}
+
 .card__image {
     position: relative;
     overflow: hidden;
@@ -906,6 +868,7 @@ svg {
 
 
 /*------------------backdrop--------------*/
+
 .backdrop {
     position: fixed;
     top: 0;

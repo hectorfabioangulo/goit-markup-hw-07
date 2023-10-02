@@ -1,0 +1,17 @@
+.header{
+    &__navegation-container-pv-main{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__container{
+        width:1200px;
+        padding:0 15px;
+        margin:auto;
+    }
+    &__navegation-list{
+        display: flex;
+        column-gap: 40px;
+         justify-content: center;
+         align-items: center;
+    }
+}
