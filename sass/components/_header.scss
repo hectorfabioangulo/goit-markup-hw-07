@@ -1,119 +1,101 @@
-@mixin flexjustify($justif, $display) {
-    display: flex;
-    justify-content: center;
-}
-
-@mixin flexalign($align, $display) {
-    display: flex;
-    align-items: center;
-}
-
-.svg {
-    fill: currentColor;
-}
-
-.a {
-    color: currentColor;
-    text-decoration: none;
-}
-
 .header {
-    @include flexjustify("center", "flex");
-    gap: 150px;
-    height: 80px;
+    width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
 
-    .header__navegation {
-        @include flexalign("center", "flex");
-        gap: 90px;
-    }
+.header__navegation-container {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .header__logo-blue {
-        color: var(--blue);
-        text-align: right;
-        font-family: 'Raleway';
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        letter-spacing: 0.03em;
-        cursor: pointer;
-    }
+.header__navegation-list {
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-content: center;
+}
 
-    .header__btn-link {
-        color: rgba(33, 33, 33, 1);
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.17em;
-        letter-spacing: 0.02em;
-        text-align: left;
-        cursor: pointer;
-        transition: 250ms var(--cubic-bezier-animation);
-    }
+.header__btn-link {
+    color: $dominant-color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17em;
+    letter-spacing: 0.02em;
+    text-align: left;
+    cursor: pointer;
+    transition: 250ms$cubic-bezier-animation;
+}
 
-    .header__btn-link:hover,
-    .header__btn-link:focus {
-        color: var(--blue);
-        outline: none;
-    }
+.header__logo-blue {
+    color: $blue;
+    text-align: right;
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
 
-    .header__menu-current::after {
-        content: "";
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        height: 5px;
-        bottom: -25px;
-        background-color: var($blue);
-        border-radius: 4px;
-    }
+.header__menu-current {
+    color: $blue;
 
-    .header__email-item {
-        font-family: 'Roboto', sans-serif;
-        color: $grey;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.17em;
-        letter-spacing: 0.03em;
-        cursor: pointer;
-        transition: 250ms var(--cubic-bezier-animation);
-    }
+}
 
-    .header__email-item:hover,
-    .header__email-item:focus,
-    .header__tel-item:hover,
-    .header__tel-item:focus {
-        color: var(--blue);
-    }
+.header__menu-current::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    bottom: -25px;
+    background-color: $blue;
+    border-radius: 4px;
+}
 
-    .header__tel-item {
-        color: $grey;
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.17em;
-        letter-spacing: 0.03px;
-        cursor: pointer;
-        transition: 250ms var(--cubic-bezier-animation);
-    }
+.header__contact-list {
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
 
+.header__email-item {
+    font-family: 'Roboto', sans-serif;
+    color: $grey;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: 250ms$cubic-bezier-animation;
+}
 
-    .header__navegation-container-pv-main {
-        display: flex;
-        justify-content: space-between;
-    }
+.header__btn-link:hover,
+.header__btn-link:focus {
+    color: $blue;
+    outline: none;
+}
 
-    .header__tel-item {
-        width: 1200px;
-        padding: 0 15px;
-        margin: auto;
-    }
+.header__email-item:hover,
+.header__email-item:focus,
+.header__tel-item:hover,
+.header__tel-item:focus {
+    color: $blue;
+}
 
-    .header__navegation-list {
-        display: flex;
-        column-gap: 40px;
-        justify-content: center;
-        align-items: center;
-    }
+.header__tel-item {
+    color: $grey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.17em;
+    letter-spacing: 0.03px;
+    cursor: pointer;
+    transition: 250ms$cubic-bezier-animation;
 }
