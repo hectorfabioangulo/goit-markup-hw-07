@@ -11,5 +11,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "window.zoomLevel": 1.5,
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "icons"
 }
